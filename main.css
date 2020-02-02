@@ -1,0 +1,37 @@
+html,
+body {
+    margin: auto 0;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+section {
+    max-width: 100%;
+    padding: 10px;
+    text-align: justify;
+}
+
+section>p {
+    padding: 0 13px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.card {
+    border: 1px solid lightgrey;
+    margin-bottom: 9px;
+    padding: 0 5px;
+}
+
+.description {
+    color: #888;
+}
+
+.printers {
+    width: 240px;
+    height: 240px;
+}

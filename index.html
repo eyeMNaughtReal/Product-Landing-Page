@@ -5,13 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Creality Ender 3</title>
 </head>
 
 <body>
-    <header>
-        <h1>Products for Everyone!</h1>
+    <header id="header">
+        <h1>Creality</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href=#about>About Us</a></li>
+                <li class="nav-link"><a href=#products>Products</a></li>
+                <li class="nav-link"><a href=#contact>Contact Us</a></li>
+            </ul>
+        </nav>
+
     </header>
+    <!-- header end -->
+    <section id="about">
+        <h2>Company Story</h2>
+
+        <p>Founded in 2014, Shenzhen Creality 3D Technology Co. Ltd. focuses on the design, research, production of 3D
+            printers and 3D printing derivatives. Consisting of professional researchers and skilled engineers, our
+            R&amp;D
+            team constantly strives for quality and excellence. The company’s R&amp;D investments on additive
+            manufacturing
+            cover FDM/DLP/SLA 3D printers, 3D scanners, filaments, resin as well as 3D printed drones and robots that
+            back up STEAM education.</p>
+        <p>Our factory is certificated with BSCI and ISO, covering an area of 20,000 square meters, and achieving an
+            annual production capacity of over 500,000 units. Our products are all certified to CE, FCC, and ROHS
+            standards, have exported to more than 100 countries including, but not limited to France, the United States
+            of America, Australia, Russia, the United Kingdom, Germany, Singapore, Egypt, and India, bringing
+            technological innovation to all walks of life.</p>
+        <p>We are helping people Create Reality and Achieve Dreams with affordable consumer 3D printers.
+        </p>
+        <!-- About Us -->
+    </section>
+    <section id="products">
+        <!-- Products -->
+        <h2>Products</h2>
+        <p>Our line consists of resin printers and filament printers, for whatever your printing needs demand.</p>
+        <div id="wrapper">
+            <div class="card">
+                <h4>Ender-5 3D Printer</h4>
+                <img class="printers" src="https://creality.com/u_file/1911/products/25/73ae1bb5e6.jpg"
+                    alt="Ender-5 Printer">
+                <p class="description">
+                    Build size 220mm*220mm*300mm | BLTouch auto leveling | Industrial circuit board and build-in
+                    motherboard |
+                    Magnetic bed | Pause and resume printing functionality
+                </p>
+            </div>
+            <div class="card">
+                <h4>CR-10 Max 3D Printer</h4>
+                <img class="printers" src="https://creality.com/u_file/1911/products/25/693a4b0704.jpg"
+                    alt="CR-10 Max Printer">
+                <p class="description">Build size 450mm*450mm*470mm | Golden triangle for better stability | Rpid
+                    heat-up of entire platform | Imported Capricorn Teflon tube | Double drive for rapid feeding</p>
+            </div>
+            <div class="card">
+                <h4>** Coming Soon ** LD-002R 3D Printer</h4>
+                <img class="printers" src="https://creality.com/u_file/1912/products/23/d48d306aff.png"
+                    alt="LD-002R Resin Printer">
+                <p class="description">Build size 119mm*65mm*160mm | Ultra HD 2K LCD screen | Air purification system |
+                    Anti-aliasing effect | Stable ball-type linear rails | High resolution prints</p>
+            </div>
+            <div class="card">
+                <h4>Ender-5 Plus 3D Printer</h4>
+                <img class="printers" src="https://creality.com/u_file/1910/products/09/52565f1cf8.jpg"
+                    alt="Ender-5 Plus Printer">
+                <p class="description">Build size 350mm*350mm*400mm | Ender-5 plus is made by with 3d printed parts |
+                    Ultra-large printing format to meet more of printing requirement | More Stable Z-axis | Auto bed
+                    leveling pre-installed</p>
+            </div>
+            <div id="video">
+                <iframe src="https://www.youtube.com/embed/G0FQeah_3hw" frameborder="0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <!-- Contact Us -->
+        <h2>Contact Us</h2>
+        <form action="">
+            <p>Contact us for more information:</p>
+            <input type="email" name="email" id="email">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+
+    </footer>
+
 </body>
 
 </html>
