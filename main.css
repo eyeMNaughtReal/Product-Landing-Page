@@ -3,28 +3,57 @@ body {
     margin: auto 0;
 }
 
+h1 {
+    font-size: 3.2em;
+}
+
 nav>ul {
     list-style-type: none;
 }
 
+#nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar>ul {
+    display: flex;
+}
+
+.nav-link {
+    padding: 12px;
+    width: 100%;
+}
+
 section {
-    max-width: 100%;
     padding: 10px;
     text-align: justify;
 }
 
 section>p {
     padding: 0 13px;
+    line-height: 1.5em;
 }
 
-.wrapper {
+#wrapper,
+#vid-card {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     border: 1px solid lightgrey;
-    margin-bottom: 9px;
+    margin: 9px;
     padding: 0 5px;
+    text-align: center;
+    max-width: 250px;
+}
+
+#video {
+    text-align: center;
 }
 
 .description {
