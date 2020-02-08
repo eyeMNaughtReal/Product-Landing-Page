@@ -3,32 +3,54 @@ body {
     margin: auto 0;
 }
 
+nav {}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
 h1 {
     font-size: 3.2em;
 }
 
 nav>ul {
     list-style-type: none;
+    padding: 0;
 }
 
+/* 
 #nav-bar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-}
+} */
 
-#nav-bar>ul {
+/* #nav-bar>ul {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+} */
+
+li {
+    margin: 4px 0;
 }
 
-.nav-link {
-    padding: 12px;
-    width: 100%;
+li a {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
 }
 
 section {
-    padding: 10px;
+    padding: 20px 10px;
     text-align: justify;
 }
 
@@ -63,4 +85,84 @@ section>p {
 .printers {
     width: 240px;
     height: 240px;
+}
+
+form,
+footer,
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    width: 12rem;
+    height: 1.2rem;
+    margin: 5px auto;
+}
+
+button {
+    width: 5.4rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+    background-color: yellow;
+    margin: auto;
+}
+
+#about {
+    background-color: moccasin;
+}
+
+#contact {
+    background-color: lightgrey;
+}
+
+#footer {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+
+    html {
+        background-color: grey;
+    }
+
+    body {
+        margin: auto;
+        max-width: 800px;
+        align-content: center;
+        background-color: white;
+    }
+
+    h1 {
+        text-align: left;
+        margin: 20px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        text-align: right;
+        flex-direction: row-reverse;
+    }
+
+    li a {
+        margin: 0 10px;
+        padding: 12px 20px;
+    }
+
+    /*
+    h1 {
+        display: flex;
+        font-size: 3.2em;
+        margin: 5px 0;
+        padding: 12px;
+    } */
 }
