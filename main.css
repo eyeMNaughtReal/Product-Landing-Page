@@ -13,6 +13,8 @@ nav {}
     text-align: center;
     width: 100%;
     margin: auto;
+    color: rgb(208, 208, 208);
+    background: rgba(30, 40, 58, 1);
 }
 
 h1 {
@@ -43,15 +45,24 @@ li {
 }
 
 li a {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     text-decoration: none;
     padding: 8px 16px;
     display: block;
 }
 
+a:hover {
+    background-color: rgba(110, 124, 152, 0.5);
+}
+
+a:visited {
+    color: #FFF;
+}
+
 section {
     padding: 20px 10px;
     text-align: justify;
+    border-bottom: thin solid rgba(0, 0, 0, 0.125);
 }
 
 section>p {
@@ -109,21 +120,24 @@ button {
     width: 5.4rem;
     height: 2rem;
     border-radius: 4px;
-    border: none;
-    background-color: yellow;
+    border: 1px solid #ddd;
+    background: #5bb94c;
+    color: #FFF;
     margin: auto;
 }
 
-#about {
-    background-color: moccasin;
+button:hover {
+    background: darkgreen;
 }
 
-#contact {
-    background-color: lightgrey;
-}
+#about {}
+
+#contact {}
 
 #footer {
     padding: 5px;
+    background: #595656;
+    color: #FFF;
 }
 
 @media only screen and (min-width: 768px) {
@@ -131,7 +145,8 @@ button {
     /* For desktop: */
 
     html {
-        background-color: grey;
+        background-color: rgb(223, 223, 223);
+        margin-top: 40px;
     }
 
     body {
@@ -139,6 +154,10 @@ button {
         max-width: 800px;
         align-content: center;
         background-color: white;
+    }
+
+    footer {
+        margin-bottom: 40px;
     }
 
     h1 {
