@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap');
+
+/* Mobile Friendly */
+
 html,
 body {
     margin: auto 0;
-    color: rgb(40, 40, 40);
+    font-family: 'Roboto', sans-serif;
 }
-
-nav {}
 
 #header {
     display: flex;
@@ -14,12 +16,14 @@ nav {}
     text-align: center;
     width: 100%;
     margin: auto;
-    color: rgb(248, 248, 248);
-    background: rgba(30, 40, 58, 1);
+    background: #facf5a;
 }
 
 h1 {
     font-size: 3.2em;
+    color: rgb(40, 40, 40);
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
 }
 
 nav>ul {
@@ -27,37 +31,23 @@ nav>ul {
     padding: 0;
 }
 
-/* 
-#nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
-/* #nav-bar>ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-} */
-
 li {
     margin: 4px 0;
 }
 
 li a {
-    /*border: 1px solid black;*/
     text-decoration: none;
     padding: 8px 16px;
     display: block;
+    color: rgb(40, 40, 40);
 }
 
 a:hover {
-    background-color: rgba(110, 124, 152, 0.5);
+    background-color: hsl(44, 100%, 79%);
 }
 
 a:visited {
-    color: #FFF;
+    color: rgb(40, 40, 40);
 }
 
 section {
@@ -69,6 +59,10 @@ section {
 section>p {
     padding: 0 13px;
     line-height: 1.5em;
+}
+
+#products {
+    background: #ccf7f4;
 }
 
 #wrapper,
@@ -84,10 +78,16 @@ section>p {
     padding: 0 5px;
     text-align: center;
     max-width: 250px;
+    background: #fff;
 }
 
 #video {
     text-align: center;
+}
+
+#vid-card {
+    height: 100%;
+    width: 100%;
 }
 
 .description {
@@ -105,10 +105,13 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    color: #ff5959;
+}
+
 form {
     display: flex;
     flex-direction: column;
-
 }
 
 input {
@@ -131,14 +134,10 @@ button:hover {
     background: darkgreen;
 }
 
-#about {}
-
-#contact {}
-
 #footer {
     padding: 5px;
-    background: #595656;
-    color: #FFF;
+    background: #facf5a;
+    color: rgb(40, 40, 40);
 }
 
 @media only screen and (min-width: 768px) {
@@ -152,7 +151,7 @@ button:hover {
 
     body {
         margin: auto;
-        max-width: 800px;
+        max-width: 1100px;
         align-content: center;
         background-color: white;
         box-shadow: 0 0 10px 10px rgb(191, 190, 190);
@@ -184,14 +183,6 @@ button:hover {
 
     li a {
         margin: 0 10px;
-        padding: 12px 20px;
+        padding: 12px 15px;
     }
-
-    /*
-    h1 {
-        display: flex;
-        font-size: 3.2em;
-        margin: 5px 0;
-        padding: 12px;
-    } */
 }
