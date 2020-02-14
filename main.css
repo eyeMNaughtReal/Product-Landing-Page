@@ -53,7 +53,6 @@ a:visited {
 section {
     padding: 20px 10px;
     text-align: justify;
-    border-bottom: thin solid rgba(0, 0, 0, 0.125);
 }
 
 section>p {
@@ -65,8 +64,7 @@ section>p {
     background: #ccf7f4;
 }
 
-#wrapper,
-#vid-card {
+#wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -81,13 +79,17 @@ section>p {
     background: #fff;
 }
 
+#vid-card {
+    margin: auto;
+}
+
 #video {
     text-align: center;
 }
 
-#vid-card {
-    height: 100%;
-    width: 100%;
+iframe {
+    margin: 0 auto;
+
 }
 
 .description {
@@ -131,7 +133,7 @@ button {
 }
 
 button:hover {
-    background: darkgreen;
+    background: rgb(0, 103, 0);
 }
 
 #footer {
@@ -146,15 +148,18 @@ button:hover {
 
     html {
         background-color: rgba(223, 223, 223, .5);
-        margin-top: 40px;
+        margin: auto;
     }
+
+    #header {
+        height: 80px;
+    }
+
 
     body {
         margin: auto;
-        max-width: 1100px;
         align-content: center;
         background-color: white;
-        box-shadow: 0 0 10px 10px rgb(191, 190, 190);
     }
 
     #nav-bar {
@@ -163,14 +168,11 @@ button:hover {
         justify-content: center;
     }
 
-    footer {
-        margin-bottom: 40px;
-    }
-
     h1 {
         text-align: left;
         /*margin: 20px;*/
         padding-left: 30px;
+        margin-top: 10px
     }
 
     ul {
@@ -179,6 +181,8 @@ button:hover {
         text-align: right;
         align-self: center;
         flex-direction: row-reverse;
+        margin-right: 50px;
+        margin-top: -15px;
     }
 
     li a {
