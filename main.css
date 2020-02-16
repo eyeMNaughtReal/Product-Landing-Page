@@ -2,10 +2,6 @@
 
 /* Mobile Friendly */
 
-/* header background-color #facf5a */
-/* link background-color on hover hsl(44,100%,70%) */
-/* h2 color #ff5959 */
-
 html,
 body {
     margin: auto 0;
@@ -46,10 +42,15 @@ body {
 .nav-link a {
     text-decoration: none;
     color: inherit;
+    transition: background 0.8s ease;
+}
+
+.nav-link a:hover {
+    background: hsl(44,100%,80%);
+    transition: background 0.8s ease;
 }
 
 #about {
-    background: #fac;
     grid-area: about;
     width: auto;
     margin-left: 10px;
@@ -89,15 +90,44 @@ body {
     font-size: .9rem;
 }
 
+input{
+    width: 18em;
+    height: 1.5em;
+    border: 1px solid lightslategray; 
+    margin: 10px 0;
+}
+
+input:focus {
+    background: lightgoldenrodyellow;
+}
+
+button {
+    width: 7em;
+    padding: .5em;
+    background: rgba(255,69,0,1);
+    opacity: .9;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: rgba(255,69,0,.7);
+    color: white;
+}
+
 #contact {
-    background: #12bbee;
     grid-area: contact;
     margin: 0 5px;
     padding: 5px;
+    text-align: center;
 }
 
 #footer {
-    background: #9ae;
+    padding: 5px;
+    background: #facf5a;
     grid-area: footer;
     text-align: center;
 }
@@ -106,10 +136,6 @@ h2 {
     color: #ff5959;
 }
 
-#footer {
-    padding: 5px;
-    background: #facf5a;
-}
 
 @media only screen and (min-width: 1128px) {
 
