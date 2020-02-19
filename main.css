@@ -2,6 +2,24 @@
 
 /* Mobile Friendly */
 
+.my-component[aria-hidden="true"] {
+    display: none;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
 html,
 body {
     margin: auto 0;
@@ -63,7 +81,6 @@ a:hover {
     grid-area: about;
     width: auto;
     margin: 0 10px;
-    text-align: justify;
     padding: 0 8px;
 }
 
@@ -89,7 +106,6 @@ a:hover {
 }
 */
 #products {
-    background: #ccf7f4;
     grid-area: products;
     padding: 15px;
 }
@@ -116,7 +132,6 @@ a:hover {
 
 .card p {
     padding: 0 10px;
-    text-align: justify;
     color: darkslategray;
     font-size: .9rem;
 }
