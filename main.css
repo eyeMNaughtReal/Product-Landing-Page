@@ -77,34 +77,16 @@ a:hover {
     transform: scale(1.2);
 }
 
+section>p {
+    margin: 0 20px;
+}
+
 #about {
     grid-area: about;
     width: auto;
-    margin: 0 10px;
     padding: 0 8px;
 }
 
-/*
-#img-wrapper {
-    grid-area: img;
-    width: 100%;
-    margin: auto;
-
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden !important
-}
-
-.img>img {
-    max-width: 500px;
-    max-height: auto;
-    opacity: .6;
-}
-*/
 #products {
     grid-area: products;
     padding: 15px;
@@ -114,6 +96,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 0;
 }
 
 .card {
@@ -242,6 +225,7 @@ h2 {
 
     /* For desktop: */
 
+    /*
     body {
         grid-template-areas:
             'header header header header'
@@ -250,11 +234,24 @@ h2 {
             'information information information information'
             'footer footer footer footer';
     }
+    */
 
     #nav-bar {
         display: flex;
         width: 100%;
         justify-content: center;
+    }
+
+    #header {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+
+    #about {
+        margin: 80px 10px 0 10px;
     }
 
     h1 {
