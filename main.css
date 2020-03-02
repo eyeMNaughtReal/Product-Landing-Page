@@ -2,6 +2,10 @@
 
 /* Mobile Friendly */
 
+:root {
+    --secondary-color: #facf5a;
+}
+
 .my-component[aria-hidden="true"] {
     display: none;
 }
@@ -28,18 +32,19 @@ body {
 }
 
 body {
+    font-size: 16px;
     display: grid;
     grid-template-areas:
         'header header header header'
         'about about about about'
         'products products products products'
-        'information information information information'
+        'info info info info'
         'footer footer footer footer';
     grid-gap: 5px;
 }
 
 #header {
-    background: #facf5a;
+    background: var(--secondary-color);
     grid-area: header;
     text-align: center;
 }
@@ -84,12 +89,14 @@ section>p {
 #about {
     grid-area: about;
     width: auto;
-    padding: 0 8px;
+    margin: 0 1em;
+    padding: 0 .2em;
+    line-height: 1.5em;
 }
 
 #products {
     grid-area: products;
-    padding: 15px;
+    padding: 1em;
 }
 
 #wrapper {
@@ -105,7 +112,7 @@ section>p {
     width: 300px;
     align-content: center;
     text-align: center;
-    margin: .3em;
+    margin: .2em;
 }
 
 .card img {
@@ -203,16 +210,20 @@ button:active {
     transform: translateY(4px);
 }
 
-#information {
-    grid-area: information;
-    margin: 0 5px;
-    padding: 5px;
+#info {
+    grid-area: info;
+    margin: 0 1em;
+    padding: .3em;
     text-align: center;
+}
+
+#info label {
+    font-size: .9em;
 }
 
 #footer {
     padding: 5px;
-    background: #facf5a;
+    background: var(--secondary-color);
     grid-area: footer;
     text-align: center;
 }
@@ -231,7 +242,7 @@ h2 {
             'header header header header'
             'img img img about'
             'products products products products'
-            'information information information information'
+            'info info info info'
             'footer footer footer footer';
     }
     */
@@ -265,7 +276,7 @@ h2 {
         width: 100%;
         text-align: right;
         align-self: center;
-        flex-direction: row-reverse;
+        justify-content: flex-end;
         margin-right: 50px;
     }
 
@@ -274,4 +285,11 @@ h2 {
         padding: 12px 25px;
     }
 
+    #about {
+        margin-right: 40px;
+    }
+
+    #info label {
+        font-size: 1.1em;
+    }
 }
