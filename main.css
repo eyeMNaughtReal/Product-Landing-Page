@@ -82,6 +82,10 @@ a:hover {
     transform: scale(1.2);
 }
 
+section>p {
+    margin: 0 20px;
+}
+
 #about {
     grid-area: about;
     width: auto;
@@ -99,6 +103,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 0;
 }
 
 .card {
@@ -231,6 +236,7 @@ h2 {
 
     /* For desktop: */
 
+    /*
     body {
         grid-template-areas:
             'header header header header'
@@ -239,11 +245,24 @@ h2 {
             'info info info info'
             'footer footer footer footer';
     }
+    */
 
     #nav-bar {
         display: flex;
         width: 100%;
         justify-content: center;
+    }
+
+    #header {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+
+    #about {
+        margin: 80px 10px 0 10px;
     }
 
     h1 {
