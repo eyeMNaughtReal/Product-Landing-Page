@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap');
 
 /* Mobile Friendly */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 :root {
     --secondary-color: #facf5a;
+    font-size: 16px;
 }
 
 .my-component[aria-hidden="true"] {
@@ -32,7 +38,7 @@ body {
 }
 
 body {
-    font-size: 16px;
+    font-size: .98rem;
     display: grid;
     grid-template-areas:
         'header header header header'
@@ -83,7 +89,7 @@ a:hover {
 }
 
 section>p {
-    margin: 0 20px;
+    margin: 1rem 1.25rem;
 }
 
 #about {
@@ -121,7 +127,7 @@ section>p {
 }
 
 .card p {
-    padding: 0 10px;
+    padding: 0 .625rem;
     color: darkslategray;
     font-size: .9rem;
 }
@@ -131,7 +137,7 @@ section>p {
     max-width: 750px;
     max-height: auto;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 #video {
@@ -154,7 +160,7 @@ input {
     width: 17em;
     height: 1.6em;
     border: 1px solid lightslategray;
-    font-size: 15px;
+    font-size: .94rem;
 }
 
 input:focus,
@@ -168,7 +174,7 @@ button {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 16px;
+    font-size: .94rem;
     padding: .5em;
     width: 7em;
     transition: all 0.5s;
@@ -197,7 +203,7 @@ button span:before {
 }
 
 button:hover span {
-    padding-left: 10px;
+    padding-left: 1.25rem;
 }
 
 button:hover span:before {
@@ -222,10 +228,11 @@ button:active {
 }
 
 #footer {
-    padding: 5px;
+    padding: 1.5rem 0;
     background: var(--secondary-color);
     grid-area: footer;
     text-align: center;
+
 }
 
 h2 {
@@ -236,17 +243,6 @@ h2 {
 
     /* For desktop: */
 
-    /*
-    body {
-        grid-template-areas:
-            'header header header header'
-            'img img img about'
-            'products products products products'
-            'info info info info'
-            'footer footer footer footer';
-    }
-    */
-
     #nav-bar {
         display: flex;
         width: 100%;
@@ -254,21 +250,19 @@ h2 {
     }
 
     #header {
-        position: fixed;
         width: 100%;
         overflow: hidden;
+        padding: 1.5rem 0;
     }
 
-
-
     #about {
-        margin: 80px 10px 0 10px;
+        margin: .625rem .625rem 0 .625rem;
     }
 
     h1 {
         text-align: left;
-        padding-left: 30px;
-        margin-top: 10px
+        padding-left: 1.875rem;
+        margin-top: .625rem;
     }
 
     ul {
@@ -277,19 +271,19 @@ h2 {
         text-align: right;
         align-self: center;
         justify-content: flex-end;
-        margin-right: 50px;
+        margin-right: 3.125rem;
     }
 
     li a {
-        margin: 0 10px;
-        padding: 12px 25px;
+        margin: 0 .625rem;
+        padding: .75rem 1.5625rem;
     }
 
     #about {
-        margin-right: 40px;
+        margin-right: 2.5rem;
     }
 
     #info label {
-        font-size: 1.1em;
+        font-size: 1rem;
     }
 }
