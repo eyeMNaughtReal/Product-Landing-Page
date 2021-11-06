@@ -49,6 +49,10 @@ body {
     grid-gap: 5px;
 }
 
+a:focus-visible {
+    outline: 2px solid black;
+   }
+
 #header {
     background: var(--secondary-color);
     grid-area: header;
@@ -97,12 +101,13 @@ section>p {
     width: auto;
     margin: 0 1em;
     padding: 0 .2em;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 #products {
     grid-area: products;
     padding: 1em;
+    line-height: 1.5rem;
 }
 
 #wrapper {
@@ -121,9 +126,15 @@ section>p {
     margin: .2em;
 }
 
+.card-title {
+    height: 63px;
+    padding: 10px 0;
+}
+
 .card img {
     height: 350px;
     width: 300px;
+    background: grey;
 }
 
 .card p {
@@ -168,11 +179,18 @@ input:hover {
     background: lightgoldenrodyellow;
 }
 
+button:focus-visible {
+	/* Default. Will be removed in Forced Color Modes */
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1); 
+	/* Fallback. Will be visible with custom system colors in Forced Color Modes */
+	outline: 1px solid transparent; 
+}
+
 button {
     border-radius: 4px;
-    background-color: rgba(255, 69, 0, 1);
+    background-color: rgba(250, 207, 90, 1);
     border: none;
-    color: #FFFFFF;
+    color: #000;
     text-align: center;
     font-size: .94rem;
     padding: .5em;
@@ -183,7 +201,7 @@ button {
 }
 
 button:hover {
-    background: rgba(255, 69, 0, .8);
+    background: rgba(250, 207, 30, .8);
 }
 
 button span {
@@ -232,7 +250,7 @@ button:active {
     background: var(--secondary-color);
     grid-area: footer;
     text-align: center;
-
+    line-height: 1.5rem;
 }
 
 h2 {
