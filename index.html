@@ -12,13 +12,15 @@
 <body>
 
     <header id="header">
+        <div id="logo"></div>
+            <img src="imgs/creality-logo.png" id="header-img" alt="creality-logo">
+        </div>
         <nav id="nav-bar">
-            <h1 class="visually-hidden">Creality</h1>
             
             <ul id="nav">
-                <li class="nav-link"><a href=#about>About</a></li>
-                <li class="nav-link"><a href=#products>Products</a></li>
-                <li class="nav-link"><a href=#info>Information</a></li>
+                <li><a class="nav-link" href=#about>About</a></li>
+                <li><a class="nav-link" href=#products>Products</a></li>
+                <li><a class="nav-link" href=#info>Information</a></li>
             </ul>
         </nav>
     </header>
@@ -119,10 +121,8 @@
             </div>
         </div>
         <div id="vid-card">
-            <div id="video">
-                <iframe src="https://www.youtube.com/embed/G0FQeah_3hw" frameborder="0" tabindex= "-1"
+                <iframe id="video" height="315" src="https://www.youtube.com/embed/G0FQeah_3hw" frameborder="0" tabindex= "-1"
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Creality LD-002R LCD Resin 3D Printer"></iframe>
-            </div>
         </div>
     </section>
     <!-- End Products -->
@@ -130,10 +130,10 @@
     <section id="info">
         <!-- More Information -->
         <h2>More Information</h2>
-        <form action="">
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
             <label for="email">For more information, enter your email address below:</label><br>
             <input type="email" name="email" id="email" placeholder="Please enter email address">
-            <button type="submit" id="submit"><span>Submit</span></button>
+            <input type="submit" id="submit" class="btn" value="Submit">
         </form>
     </section>
     <!-- End Information -->
